@@ -1,0 +1,10 @@
+services:
+    application:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        entrypoint: python
+        command:
+            - main.py
+        volumes:
+            - ./src:/application
