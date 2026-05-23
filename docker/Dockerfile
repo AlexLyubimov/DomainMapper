@@ -1,6 +1,6 @@
+FROM python:3.11-alpine
 
-WORKDFROM python:3.11-alpine
-IR /application
+WORKDIR /application
 
 RUN pip3 install --upgrade pip
 
